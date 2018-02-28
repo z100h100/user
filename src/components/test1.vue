@@ -1,12 +1,9 @@
 <template>
   <div class="hello">
      <h1 @click='testclick'>
-
          ahref="https://vuejs.org"
           target="_blank"
       </h1>
-    
-  
   </div>
 </template>
 
@@ -19,9 +16,8 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
-   created(){
-    
-    console.log('test1' )
+  created(){
+    //console.log('test1' )
     getData.GetColumnList();
   },
   methods:{
@@ -30,13 +26,10 @@ export default {
     }
   },
   beforeDestroy() {
-            // console.log("test");
+
   },
-   destoryed:function(){
+  destoryed:function(){
 
-      // console.log("destoryed 销毁完成状态======》");
-
-     // getDataPack.source.cancel('Operation canceled by the user.');
   }
  
 }
